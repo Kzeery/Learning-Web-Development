@@ -1,0 +1,11 @@
+$("li:first").text("jQuery text changer");
+$(".highlight").html("<strong>hello</strong>");
+$("img").css("width", "200px");
+$("img:first-of-type").attr("src", "https://c3.staticflickr.com/3/2418/2243463214_f32ab004af_b.jpg");
+$("input").attr("type", "color");
+$("img").last().attr("src", "https://c3.staticflickr.com/3/2418/2243463214_f32ab004af_b.jpg");
+$("input").val("#400040");
+$("select").val("Toad");
+$("li").last().addClass("correct");
+$("h1").removeClass("wrong");
+$("li").toggleClass("correct");
