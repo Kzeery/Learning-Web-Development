@@ -2,6 +2,9 @@ var express = require("express");
 var app = express();
 var bodyParser = require("body-parser");
 
+const hostname = '127.0.0.1';
+const port = 3000;
+
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 
@@ -33,6 +36,6 @@ app.get("/campgrounds/new", function(req, res) {
    res.render("new") 
 });
 
-app.listen(process.env.PORT, process.env.IP, function() {
+app.listen(port, hostname, function() {
     console.log("The YelpCamp Server Has Started!");
 });
